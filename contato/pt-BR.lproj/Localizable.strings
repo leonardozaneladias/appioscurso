@@ -1,0 +1,12 @@
+/* 
+  Strings.strings
+  contato
+
+  Created by Leonardo Zanela Dias on 03/07/2018.
+  Copyright © 2018 ios7649. All rights reserved.
+*/
+"save"="Salvar";
+"message.delete.header"="Atenção";
+"message.delete"="Tem certeza que deseja excluir o contato %@?";
+"cancel"="Cancelar";
+"remove"="Excluir";

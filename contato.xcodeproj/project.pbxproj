@@ -18,6 +18,10 @@
 		8507AB7E20EA984600E2A424 /* Contato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507AB7D20EA984600E2A424 /* Contato.swift */; };
 		8507AB8020EAA00700E2A424 /* ContatoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507AB7F20EAA00700E2A424 /* ContatoDAO.swift */; };
 		8507AB8220EAA73D00E2A424 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8507AB8120EAA73D00E2A424 /* ContactTableViewController.swift */; };
+		FA860A4320ECF06B00C74BFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA860A4520ECF06B00C74BFA /* InfoPlist.strings */; };
+		FA9468F520EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9468F420EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift */; };
+		FA9468FA20EC0C6A00C804C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9468FC20EC0C6A00C804C5 /* Localizable.strings */; };
+		FA9468FF20EC121900C804C5 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9468FE20EC121900C804C5 /* String+Localized.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,14 @@
 		8507AB7D20EA984600E2A424 /* Contato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contato.swift; sourceTree = "<group>"; };
 		8507AB7F20EAA00700E2A424 /* ContatoDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoDAO.swift; sourceTree = "<group>"; };
 		8507AB8120EAA73D00E2A424 /* ContactTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		FA860A4420ECF06B00C74BFA /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		FA860A4620ECF07200C74BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA9468F420EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrUpdateContactDelegate.swift; sourceTree = "<group>"; };
+		FA9468F820EC0C2A00C804C5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
+		FA9468F920EC0C2A00C804C5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FA9468FB20EC0C6A00C804C5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FA9468FD20EC0CBD00C804C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA9468FE20EC121900C804C5 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,10 @@
 				8507AB5320EA5EBE00E2A424 /* contato.xcdatamodeld */,
 				8507AB7D20EA984600E2A424 /* Contato.swift */,
 				8507AB7F20EAA00700E2A424 /* ContatoDAO.swift */,
+				FA9468F420EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift */,
+				FA9468FC20EC0C6A00C804C5 /* Localizable.strings */,
+				FA9468FE20EC121900C804C5 /* String+Localized.swift */,
+				FA860A4520ECF06B00C74BFA /* InfoPlist.strings */,
 			);
 			path = contato;
 			sourceTree = "<group>";
@@ -200,20 +216,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = ios7649;
 				TargetAttributes = {
 					8507AB4820EA5EBD00E2A424 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = DZFL29D259;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					8507AB5F20EA5EBE00E2A424 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8507AB4820EA5EBD00E2A424;
 					};
 					8507AB6A20EA5EBF00E2A424 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8507AB4820EA5EBD00E2A424;
 					};
@@ -245,8 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8507AB5A20EA5EBE00E2A424 /* LaunchScreen.storyboard in Resources */,
+				FA9468FA20EC0C6A00C804C5 /* Localizable.strings in Resources */,
 				8507AB5720EA5EBE00E2A424 /* Assets.xcassets in Resources */,
 				8507AB5220EA5EBE00E2A424 /* Main.storyboard in Resources */,
+				FA860A4320ECF06B00C74BFA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,9 +295,11 @@
 			files = (
 				8507AB7E20EA984600E2A424 /* Contato.swift in Sources */,
 				8507AB5520EA5EBE00E2A424 /* contato.xcdatamodeld in Sources */,
+				FA9468FF20EC121900C804C5 /* String+Localized.swift in Sources */,
 				8507AB8220EAA73D00E2A424 /* ContactTableViewController.swift in Sources */,
 				8507AB8020EAA00700E2A424 /* ContatoDAO.swift in Sources */,
 				8507AB4F20EA5EBE00E2A424 /* ViewController.swift in Sources */,
+				FA9468F520EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift in Sources */,
 				8507AB4D20EA5EBE00E2A424 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +340,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8507AB5120EA5EBE00E2A424 /* Base */,
+				FA9468F820EC0C2A00C804C5 /* pt-BR */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -324,8 +349,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				8507AB5920EA5EBE00E2A424 /* Base */,
+				FA9468F920EC0C2A00C804C5 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FA860A4520ECF06B00C74BFA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA860A4420ECF06B00C74BFA /* pt-BR */,
+				FA860A4620ECF07200C74BFA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA9468FC20EC0C6A00C804C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA9468FB20EC0C6A00C804C5 /* pt-BR */,
+				FA9468FD20EC0CBD00C804C5 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -335,20 +379,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -371,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -385,20 +439,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -415,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -428,11 +492,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZFL29D259;
 				INFOPLIST_FILE = contato/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leo.zanela.contato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -440,11 +506,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DZFL29D259;
 				INFOPLIST_FILE = contato/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leo.zanela.contato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -457,7 +525,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leo.zanela.contatoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contato.app/contato";
 			};
 			name = Debug;
@@ -471,7 +540,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leo.zanela.contatoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/contato.app/contato";
 			};
 			name = Release;
@@ -484,7 +554,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leo.zanela.contatoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = contato;
 			};
 			name = Debug;
@@ -497,7 +568,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = leo.zanela.contatoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = contato;
 			};
 			name = Release;
@@ -521,6 +593,7 @@
 				8507AB7620EA5EBF00E2A424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8507AB7720EA5EBF00E2A424 /* Build configuration list for PBXNativeTarget "contatoTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +602,7 @@
 				8507AB7920EA5EBF00E2A424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8507AB7A20EA5EBF00E2A424 /* Build configuration list for PBXNativeTarget "contatoUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +611,7 @@
 				8507AB7C20EA5EBF00E2A424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

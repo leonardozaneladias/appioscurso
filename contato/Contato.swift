@@ -16,7 +16,7 @@ class Contato: CustomStringConvertible {
     var site: String!
     
     var description: String {
-        return "Nome: \(nome!), Endereço: \(endereco!), Telefone: \(telefone!), Site: \(site!)"
+        return "Nome: \(nome), Endereço: \(endereco), Telefone: \(telefone), Site: \(site)"
     }
 
 }

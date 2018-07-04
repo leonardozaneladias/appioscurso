@@ -1,0 +1,24 @@
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "7ja-CR-zan"; */
+"7ja-CR-zan.title" = "Title";
+
+/* Class = "UITextField"; placeholder = "Endereço"; ObjectID = "BMg-03-Tp8"; */
+"BMg-03-Tp8.placeholder" = "Endereço";
+
+/* Class = "UIButton"; normalTitle = "Salvar"; ObjectID = "ERQ-38-IwZ"; */
+"ERQ-38-IwZ.normalTitle" = "Salvar";
+
+/* Class = "UITextField"; placeholder = "Telefone"; ObjectID = "Llz-S4-j5j"; */
+"Llz-S4-j5j.placeholder" = "Telefone";
+
+/* Class = "UILabel"; text = "Lista de Contatos"; ObjectID = "Q7T-bL-NBA"; */
+"Q7T-bL-NBA.text" = "Lista de Contatos";
+
+/* Class = "UINavigationItem"; title = "Contatos"; ObjectID = "avR-Kh-p6u"; */
+"avR-Kh-p6u.title" = "Contatos";
+
+/* Class = "UITextField"; placeholder = "Nome"; ObjectID = "cal-yb-r5d"; */
+"cal-yb-r5d.placeholder" = "Nome";
+
+/* Class = "UITextField"; placeholder = "Site"; ObjectID = "iBd-TV-KZj"; */
+"iBd-TV-KZj.placeholder" = "Site";

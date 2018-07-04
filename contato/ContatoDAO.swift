@@ -31,6 +31,10 @@ class ContatoDAO: NSObject {
         contatos.append(contato)
         print(contatos)
     }
+    
+    func getPosition(by contact: Contato) -> Int? {
+        return contatos.index(where: { other in return other.nome == contact.nome })
+    }
 
     func size() -> Int {
         return contatos.count
@@ -38,5 +42,9 @@ class ContatoDAO: NSObject {
     
     func findByPosition(position: Int) -> Contato {
         return contatos[position]
+    }
+    
+    func remove(byId id: Int) {
+        contatos.remove(at: id)
     }
 }
