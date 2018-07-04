@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dJc-9W-IN9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vpN-v9-5Cj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -116,7 +116,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wMg-ar-pw8">
-                                <rect key="frame" x="0.0" y="167" width="375" height="500"/>
+                                <rect key="frame" x="0.0" y="118" width="375" height="500"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="0i0-sq-yja">
@@ -194,10 +194,11 @@
             </objects>
             <point key="canvasLocation" x="791.20000000000005" y="149.77511244377811"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Contatos-->
         <scene sceneID="3g6-Gb-Ce8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dJc-9W-IN9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contatos" image="lista-contatos" id="QD1-mY-dqp"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5r1-12-sqY">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -212,7 +213,81 @@
             </objects>
             <point key="canvasLocation" x="-148" y="149.77511244377811"/>
         </scene>
+        <!--Maps-->
+        <scene sceneID="EWf-2W-Eqm">
+            <objects>
+                <viewController id="IfL-7v-kUc" customClass="MapsViewController" customModule="contato" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PWF-kF-Kv4"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Af-iO-y9b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ACx-L5-sT8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aCw-PI-k07">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aCw-PI-k07" firstAttribute="top" secondItem="PWF-kF-Kv4" secondAttribute="bottom" id="RjR-mg-gv6"/>
+                            <constraint firstItem="5Af-iO-y9b" firstAttribute="top" secondItem="aCw-PI-k07" secondAttribute="bottom" id="W8n-hd-gH5"/>
+                            <constraint firstAttribute="trailing" secondItem="aCw-PI-k07" secondAttribute="trailing" id="fiH-Ya-d6i"/>
+                            <constraint firstItem="aCw-PI-k07" firstAttribute="leading" secondItem="ACx-L5-sT8" secondAttribute="leading" id="xsB-gR-lWx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Maps" id="DHA-Uv-0FH"/>
+                    <connections>
+                        <outlet property="mapView" destination="aCw-PI-k07" id="bIu-Ex-1bU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsO-6w-sgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="926.98650674662679"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0eJ-c8-FU5">
+            <objects>
+                <tabBarController id="vpN-v9-5Cj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4ch-lS-zRB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dJc-9W-IN9" kind="relationship" relationship="viewControllers" id="Faq-Tv-fAN"/>
+                        <segue destination="3d1-J9-183" kind="relationship" relationship="viewControllers" id="3B8-XU-4Ea"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgo-lX-Rh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1513" y="478"/>
+        </scene>
+        <!--Mapa-->
+        <scene sceneID="Cty-gr-e9i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3d1-J9-183" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mapa" image="mapa-contatos" id="PP6-R8-0om"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ia2-4x-oKW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IfL-7v-kUc" kind="relationship" relationship="rootViewController" id="Ebx-Fd-ETq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxe-rD-LE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-114.40000000000001" y="926.98650674662679"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="lista-contatos" width="30" height="30"/>
+        <image name="mapa-contatos" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="EMz-pe-zNF"/>
     </inferredMetricsTieBreakers>

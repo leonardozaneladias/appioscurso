@@ -21,6 +21,7 @@
 		FA860A4320ECF06B00C74BFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA860A4520ECF06B00C74BFA /* InfoPlist.strings */; };
 		FA860A4820ECFB7900C74BFA /* ActionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A4720ECFB7900C74BFA /* ActionManager.swift */; };
 		FA860A4A20ED49CD00C74BFA /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A4920ED49CD00C74BFA /* CustomTableViewCell.swift */; };
+		FA860A4C20ED60E700C74BFA /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA860A4B20ED60E700C74BFA /* MapsViewController.swift */; };
 		FA9468F520EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9468F420EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift */; };
 		FA9468FA20EC0C6A00C804C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9468FC20EC0C6A00C804C5 /* Localizable.strings */; };
 		FA9468FF20EC121900C804C5 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9468FE20EC121900C804C5 /* String+Localized.swift */; };
@@ -65,6 +66,7 @@
 		FA860A4620ECF07200C74BFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA860A4720ECFB7900C74BFA /* ActionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionManager.swift; sourceTree = "<group>"; };
 		FA860A4920ED49CD00C74BFA /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FA860A4B20ED60E700C74BFA /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		FA9468F420EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrUpdateContactDelegate.swift; sourceTree = "<group>"; };
 		FA9468F820EC0C2A00C804C5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		FA9468F920EC0C2A00C804C5 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				FA9468FE20EC121900C804C5 /* String+Localized.swift */,
 				FA860A4520ECF06B00C74BFA /* InfoPlist.strings */,
 				FA860A4720ECFB7900C74BFA /* ActionManager.swift */,
+				FA860A4B20ED60E700C74BFA /* MapsViewController.swift */,
 			);
 			path = contato;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				FA9468F520EBF1C100C804C5 /* CreateOrUpdateContactDelegate.swift in Sources */,
 				8507AB4D20EA5EBE00E2A424 /* AppDelegate.swift in Sources */,
 				FA860A4820ECFB7900C74BFA /* ActionManager.swift in Sources */,
+				FA860A4C20ED60E700C74BFA /* MapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
