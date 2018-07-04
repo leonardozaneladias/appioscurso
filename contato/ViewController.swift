@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             contact = Contato()
         }
     }
-    
+
     private func fillForm(with contact: Contato){
         TextFildName.text = contact.nome
         FTextTelefone.text = contact.telefone
@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         FtextSite.text = contact.site
         
         photoImageView.image = contact.photo
+        
     }
     
     private func fillContact() {
@@ -132,7 +133,9 @@ extension ViewController: UINavigationControllerDelegate, UIImagePickerControlle
             return
         }
         
+        
         photoImageView.image = image
+
         
     }
     

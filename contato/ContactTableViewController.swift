@@ -86,13 +86,22 @@ extension ContactTableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: "cell_ID", for: indexPath)
+        guard let cell = tableview.dequeueReusableCell(withIdentifier: "cell_ID", for: indexPath) as? CustomTableViewCell else {
+            fatalError()
+        }
         let contato = dao.findByPosition(position: indexPath.row)
         
         // Configure the cell...
-        cell.textLabel?.text = contato.nome
-        cell.imageView?.image = contato.photo
+        cell.labelImageView?.text = contato.nome
+        cell.profileImageView?.image = contato.photo
+        
+        //cell.profileImageView?.layer.borderWidth = 3.0 // Cria borda
+        //cell.profileImageView?.layer.borderColor = UIColor.red
+        //cell.profileImageView?.layer.cornerRadius = 10.0 // Borda arredondada
         return cell
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
