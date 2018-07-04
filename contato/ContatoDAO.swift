@@ -29,7 +29,6 @@ class ContatoDAO: NSObject {
     
     func add(newContact contato: Contato) {
         contatos.append(contato)
-        print(contatos)
     }
     
     func getPosition(by contact: Contato) -> Int? {

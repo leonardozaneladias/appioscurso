@@ -10,3 +10,9 @@
 "message.delete"="Tem certeza que deseja excluir o contato %@?";
 "cancel"="Cancelar";
 "remove"="Excluir";
+
+"message.action.contact"="Ações";
+"message.action.cancel"="Cancelar";
+"message.action.call"="Chamar";
+"message.action.browse"="Abrir Site";
+"message.action.maps"="Abrir Mapa";

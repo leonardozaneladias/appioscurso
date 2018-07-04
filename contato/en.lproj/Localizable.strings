@@ -11,3 +11,9 @@
 "message.delete"="Are you sure you want to delete the contact %@?";
 "cancel"="Cancel";
 "remove"="Remove";
+
+"message.action.contact"="Actions";
+"message.action.cancel"="Cancel";
+"message.action.call"="Call";
+"message.action.browse"="Open in Browse";
+"message.action.maps"="Open in Maps";

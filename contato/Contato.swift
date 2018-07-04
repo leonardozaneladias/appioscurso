@@ -14,9 +14,16 @@ class Contato: CustomStringConvertible {
     var endereco: String!
     var telefone: String!
     var site: String!
+    var photo: UIImage!
     
     var description: String {
         return "Nome: \(nome), Endereço: \(endereco), Telefone: \(telefone), Site: \(site)"
     }
 
+}
+
+extension Contato: Equatable {
+    static func ==(lhs: Contato, rhs: Contato) -> Bool {
+        return lhs.nome == rhs.nome
+    }
 }

@@ -30,6 +30,11 @@ class ContactTableViewController: UIViewController {
         super.viewDidLoad()
         tableview.dataSource = self
         tableview.delegate = self
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(actionSheet(gesture:)))
+        
+        //tableview.gestureRecognizers = [longPress]
+        tableview.addGestureRecognizer(longPress)
 
 //          Modelo Internacionalização
 //        let message = "save".localized
@@ -57,6 +62,22 @@ class ContactTableViewController: UIViewController {
         }
     }
     
+    //@objc indicador usado para orientar que terá código em objective-c
+    @objc func actionSheet(gesture: UIGestureRecognizer) {
+        guard gesture.state == .began else {
+            return
+        }
+        let point = gesture.location(in: tableview)
+        
+        guard let indexPath = tableview.indexPathForRow(at: point) else {
+            return
+        }
+        
+        let contact = dao.findByPosition(position: indexPath.row)
+        AcitionManager(presentIn: self).showAction(of: contact)
+   
+    }
+    
 }
 
 extension ContactTableViewController: UITableViewDataSource {
@@ -70,6 +91,7 @@ extension ContactTableViewController: UITableViewDataSource {
         
         // Configure the cell...
         cell.textLabel?.text = contato.nome
+        cell.imageView?.image = contato.photo
         return cell
     }
     
